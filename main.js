@@ -1,11 +1,11 @@
 
 const formConsultarCep = document.querySelector('#consultarCep')
-const inputCep = formConsultarCep.cep
+const inputCep = formConsultarCep.cep // seleciona o input do cep a partir do formulário
 const divDados = document.querySelector('#dados')
 
 formConsultarCep.addEventListener('submit', function (event) {
   event.preventDefault() // anula comportamento padrão de envio do form ao clicar no botão
-  consultarCep(inputCep.value)
+  consultarCep(inputCep.value) // invoca a função passando o cep digitado por parâmetro
 })
 
 async function consultarCep(cep) {
