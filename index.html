@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,23 +9,23 @@
 </head>
 
 <body>
-  <div id="app">
-    <header>
-      <h1>Consultar CEP</h1>
-    </header>
-    <main>
-      <form id="consultarCep">
-        <label>CEP
-          <input name="cep" type="number" maxlength="8" />
-        </label>
-        <button id="btnConsultarCep">Consultar</button>
-      </form>
-      <br />
-      <div id="dados">
-
-      </div>
-    </main>
-  </div>
+  <main class="container">
+    <article>
+      <header>
+        <h1>Consultar CEP</h1>
+      </header>
+      <section class="grid">
+        <form id="consultarCep">
+          <label>CEP
+            <input placeholder="Digite o Cep" name="cep" type="text" maxlength="8" minlength="8" required />
+          </label>
+          <button id="btnConsultarCep">Consultar</button>
+        </form>
+        <div id="dados">
+        </div>
+      </section>
+    </article>
+  </main>
   <script type="module" src="/main.js"></script>
 </body>
 
